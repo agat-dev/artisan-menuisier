@@ -1,0 +1,465 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom classes for Bois & Racines - Typography rare et sophistiquée */
+.font-title {
+  font-family: var(--font-playfair);
+}
+
+.font-body {
+  font-family: var(--font-crimson);
+}
+
+.font-accent {
+  font-family: var(--font-baskerville);
+}
+
+.font-elegant {
+  font-family: var(--font-spectral);
+}
+
+/* Styles typographiques avancés */
+.font-display {
+  font-family: var(--font-playfair);
+  font-feature-settings: "liga" 1, "dlig" 1, "kern" 1;
+  letter-spacing: -0.02em;
+}
+
+.font-serif-refined {
+  font-family: var(--font-spectral);
+  font-feature-settings: "liga" 1, "kern" 1, "onum" 1;
+}
+
+.font-classic {
+  font-family: var(--font-baskerville);
+  font-feature-settings: "liga" 1, "kern" 1;
+  letter-spacing: 0.01em;
+}
+
+.font-editorial {
+  font-family: var(--font-crimson);
+  font-feature-settings: "liga" 1, "kern" 1, "onum" 1;
+  line-height: 1.6;
+}
+
+/* Couleurs texte bois grunge */
+.text-bois-clair {
+  color: #bf8c6f;
+}
+
+.text-bois-moyen {
+  color: #8c5c4a;
+}
+
+.text-bois-chaud {
+  color: #a67563;
+}
+
+.text-bois-sombre {
+  color: #26130f;
+}
+
+.text-bois-fonce {
+  color: #592f25;
+}
+
+.text-creme-chaud {
+  color: #faf6f0;
+}
+
+/* Nouvelle couleur d'accent chaude - Jaune miel humain */
+.text-miel-chaud {
+  color: #d4a574;
+}
+
+.text-miel-dore {
+  color: #e6b85c;
+}
+
+.text-miel-profond {
+  color: #c49660;
+}
+
+.text-miel-solaire {
+  color: #f2c464;
+}
+
+/* Couleurs de fond bois grunge */
+.bg-bois-clair {
+  background-color: #bf8c6f;
+}
+
+.bg-bois-moyen {
+  background-color: #8c5c4a;
+}
+
+.bg-bois-chaud {
+  background-color: #a67563;
+}
+
+.bg-bois-sombre {
+  background-color: #26130f;
+}
+
+.bg-bois-fonce {
+  background-color: #592f25;
+}
+
+.bg-creme-chaud {
+  background-color: #faf6f0;
+}
+
+/* Couleurs de fond accent miel */
+.bg-miel-chaud {
+  background-color: #d4a574;
+}
+
+.bg-miel-dore {
+  background-color: #e6b85c;
+}
+
+.bg-miel-profond {
+  background-color: #c49660;
+}
+
+.bg-miel-solaire {
+  background-color: #f2c464;
+}
+
+/* Couleurs de bordure bois grunge */
+.border-bois-clair {
+  border-color: #bf8c6f;
+}
+
+.border-bois-moyen {
+  border-color: #8c5c4a;
+}
+
+.border-bois-chaud {
+  border-color: #a67563;
+}
+
+.border-bois-sombre {
+  border-color: #26130f;
+}
+
+.border-bois-fonce {
+  border-color: #592f25;
+}
+
+.border-creme-chaud {
+  border-color: #faf6f0;
+}
+
+/* Couleurs de bordure accent miel */
+.border-miel-chaud {
+  border-color: #d4a574;
+}
+
+.border-miel-dore {
+  border-color: #e6b85c;
+}
+
+.border-miel-profond {
+  border-color: #c49660;
+}
+
+.border-miel-solaire {
+  border-color: #f2c464;
+}
+
+/* Variantes avec opacité */
+.bg-bois-clair\/5 {
+  background-color: rgba(191, 140, 110, 0.05);
+}
+
+.bg-bois-clair\/10 {
+  background-color: rgba(191, 140, 110, 0.1);
+}
+
+.bg-bois-clair\/20 {
+  background-color: rgba(191, 140, 110, 0.2);
+}
+
+.bg-bois-moyen\/5 {
+  background-color: rgba(140, 91, 74, 0.05);
+}
+
+.bg-bois-moyen\/10 {
+  background-color: rgba(140, 91, 74, 0.1);
+}
+
+.bg-bois-moyen\/20 {
+  background-color: rgba(140, 91, 74, 0.2);
+}
+
+.bg-bois-chaud\/5 {
+  background-color: rgba(165, 117, 99, 0.05);
+}
+
+.bg-bois-chaud\/10 {
+  background-color: rgba(165, 117, 99, 0.1);
+}
+
+.bg-bois-chaud\/20 {
+  background-color: rgba(165, 117, 99, 0.2);
+}
+
+.bg-bois-fonce\/10 {
+  background-color: rgba(89, 46, 37, 0.1);
+}
+
+.bg-bois-fonce\/20 {
+  background-color: rgba(89, 46, 37, 0.2);
+}
+
+/* Variantes avec opacité pour les couleurs miel */
+.bg-miel-chaud\/5 {
+  background-color: rgba(212, 165, 116, 0.05);
+}
+
+.bg-miel-chaud\/10 {
+  background-color: rgba(212, 165, 116, 0.1);
+}
+
+.bg-miel-chaud\/20 {
+  background-color: rgba(212, 165, 116, 0.2);
+}
+
+.bg-miel-dore\/5 {
+  background-color: rgba(230, 184, 92, 0.05);
+}
+
+.bg-miel-dore\/10 {
+  background-color: rgba(230, 184, 92, 0.1);
+}
+
+.bg-miel-dore\/20 {
+  background-color: rgba(230, 184, 92, 0.2);
+}
+
+.bg-miel-solaire\/10 {
+  background-color: rgba(242, 196, 100, 0.1);
+}
+
+.bg-miel-solaire\/20 {
+  background-color: rgba(242, 196, 100, 0.2);
+}
+
+.text-creme-chaud\/80 {
+  color: rgba(250, 246, 240, 0.8);
+}
+
+.text-creme-chaud\/60 {
+  color: rgba(250, 246, 240, 0.6);
+}
+
+.border-bois-moyen\/30 {
+  border-color: rgba(140, 91, 74, 0.3);
+}
+
+.border-bois-clair\/30 {
+  border-color: rgba(191, 140, 110, 0.3);
+}
+
+.border-miel-chaud\/30 {
+  border-color: rgba(212, 165, 116, 0.3);
+}
+
+.border-miel-dore\/30 {
+  border-color: rgba(230, 184, 92, 0.3);
+}
+
+/* Texture papier avec couleurs bois grunge */
+.texture-papier {
+  background-image: radial-gradient(circle at 1px 1px, rgba(191, 140, 110, 0.15) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Motif assemblage avec couleurs bois grunge */
+.motif-assemblage {
+  background-image: linear-gradient(
+      45deg,
+      transparent 35%,
+      rgba(191, 140, 110, 0.1) 35%,
+      rgba(191, 140, 110, 0.1) 65%,
+      transparent 65%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 35%,
+      rgba(191, 140, 110, 0.1) 35%,
+      rgba(191, 140, 110, 0.1) 65%,
+      transparent 65%
+    );
+  background-size: 40px 40px;
+}
+
+/* Dégradés personnalisés bois grunge */
+.gradient-bois-clair-moyen {
+  background: linear-gradient(135deg, #bf8c6f 0%, #8c5c4a 100%);
+}
+
+.gradient-bois-moyen-chaud {
+  background: linear-gradient(135deg, #8c5c4a 0%, #a67563 100%);
+}
+
+.gradient-bois-chaud-clair {
+  background: linear-gradient(135deg, #a67563 0%, #bf8c6f 100%);
+}
+
+/* Nouveaux dégradés avec accent miel */
+.gradient-miel-bois {
+  background: linear-gradient(135deg, #d4a574 0%, #8c5c4a 100%);
+}
+
+.gradient-miel-solaire {
+  background: linear-gradient(135deg, #f2c464 0%, #d4a574 100%);
+}
+
+.gradient-miel-chaud {
+  background: linear-gradient(135deg, #e6b85c 0%, #c49660 100%);
+}
+
+/* Effets de survol bois grunge */
+.hover\:bg-bois-moyen:hover {
+  background-color: #8c5c4a;
+}
+
+.hover\:bg-bois-clair:hover {
+  background-color: #bf8c6f;
+}
+
+.hover\:text-bois-moyen:hover {
+  color: #8c5c4a;
+}
+
+.hover\:text-bois-clair:hover {
+  color: #bf8c6f;
+}
+
+.hover\:border-bois-clair:hover {
+  border-color: #bf8c6f;
+}
+
+.hover\:border-bois-moyen:hover {
+  border-color: #8c5c4a;
+}
+
+/* Effets de survol avec accent miel */
+.hover\:bg-miel-chaud:hover {
+  background-color: #d4a574;
+}
+
+.hover\:bg-miel-dore:hover {
+  background-color: #e6b85c;
+}
+
+.hover\:text-miel-chaud:hover {
+  color: #d4a574;
+}
+
+.hover\:text-miel-dore:hover {
+  color: #e6b85c;
+}
+
+.hover\:border-miel-chaud:hover {
+  border-color: #d4a574;
+}
+
+.hover\:border-miel-dore:hover {
+  border-color: #e6b85c;
+}
+
+/* Focus states bois grunge */
+.focus\:border-bois-clair:focus {
+  border-color: #bf8c6f;
+}
+
+.focus\:border-bois-moyen:focus {
+  border-color: #8c5c4a;
+}
+
+.focus\:border-miel-chaud:focus {
+  border-color: #d4a574;
+}
+
+.focus\:border-miel-dore:focus {
+  border-color: #e6b85c;
+}
+
+/* Fill pour les icônes bois grunge */
+.fill-bois-clair {
+  fill: #bf8c6f;
+}
+
+.fill-bois-moyen {
+  fill: #8c5c4a;
+}
+
+.fill-miel-chaud {
+  fill: #d4a574;
+}
+
+.fill-miel-dore {
+  fill: #e6b85c;
+}
+
+/* Effets spéciaux pour l'accent miel */
+.glow-miel {
+  box-shadow: 0 0 20px rgba(230, 184, 92, 0.3);
+}
+
+.text-shadow-miel {
+  text-shadow: 0 2px 4px rgba(212, 165, 116, 0.3);
+}
+
+.border-glow-miel {
+  border: 2px solid #d4a574;
+  box-shadow: 0 0 10px rgba(212, 165, 116, 0.2);
+}
