@@ -85,21 +85,21 @@ export const metadata: Metadata = {
       "Maître artisan menuisier en Auvergne depuis 1998. Créations uniques en bois nobles : cuisines sur mesure, bibliothèques, escaliers. Savoir-faire traditionnel et finitions d'exception.",
     images: [
       {
-        url: "https://boisetracines.fr/artisan-jean-claude-portrait.png",
+        url: "/artisan-jean-claude-portrait.png",
         width: 1200,
         height: 630,
         alt: "Jean-Claude, maître artisan menuisier de Bois & Racines dans son atelier",
         type: "image/png",
       },
       {
-        url: "https://boisetracines.fr/atelier-menuisier-auvergne.png",
+        url: "/atelier-menuisier-auvergne.png",
         width: 1200,
         height: 630,
         alt: "Atelier de menuiserie artisanale Bois & Racines en Auvergne",
         type: "image/png",
       },
       {
-        url: "https://boisetracines.fr/bibliotheque-chene-massif.png",
+        url: "/bibliotheque-chene-massif.png",
         width: 800,
         height: 600,
         alt: "Bibliothèque Héritage en chêne centenaire - Création Bois & Racines",
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
     title: "Bois & Racines - Menuiserie Artisanale d'Exception en Auvergne",
     description:
       "Découvrez l'art de la menuiserie authentique avec Jean-Claude, maître artisan. Créations sur mesure en bois nobles d'Auvergne depuis 1998.",
-    images: ["https://boisetracines.fr/artisan-jean-claude-portrait.png"],
+    images: ["/artisan-jean-claude-portrait.png"],
   },
   verification: {
     google: "votre-code-google-search-console",
