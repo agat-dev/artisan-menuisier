@@ -158,6 +158,8 @@ export default function RootLayout({
         <meta name="geo.placename" content="Clermont-Ferrand, Auvergne" />
         <meta name="geo.position" content="45.7797;3.0863" />
         <meta name="ICBM" content="45.7797, 3.0863" />
+        <meta name="facebook-domain-verification" content="iz19z7urbioz4zdn8msc9qpz34hx0c" />
+
 
         {/* Données structurées JSON-LD pour le SEO local */}
         <script
